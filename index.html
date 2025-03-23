@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Plagiarism   Checker </h1>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rating.html">Ratings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="content">
+            <p>Ensure originality with advanced detection.</p>
+            <button onclick="redirectToLogin()">Get Started</button>
+        </div>
+       
+    </section>
+
+    <!-- Features & How It Works Container -->
+    <section id="features-how-it-works" style="display: flex; justify-content: space-between; padding: 50px; max-width: 1200px; margin: auto;">
+        
+        <!-- Features (Left Side) -->
+        <div id="features" style="width: 48%;">
+            <h2>Why Choose Our Plagiarism Checker?</h2>
+            <div class="feature-box">
+                <img src="images/accuracy.png" alt="Accuracy">
+                <h3>High Accuracy</h3>
+                <p>Detects even the smallest similarities with advanced AI technology.</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/report.png" alt="Detailed Reports">
+                <h3>Detailed Reports</h3>
+                <p>Get a comprehensive similarity percentage with sources.</p>
+            </div>
+            <div class="feature-box">
+                <img src="images/fast.png" alt="Fast Results">
+                <h3>Instant Results</h3>
+                <p>Get plagiarism results in seconds with our high-speed checker.</p>
+            </div>
+        </div>
+
+        <!-- How It Works (Right Side) -->
+        <div id="how-it-works" style="width: 48%;">
+            <h2>How It Works</h2>
+            <div class="step">
+                <img src="images/upload.png" alt="Upload File">
+                <h3>Upload Your Document</h3>
+                <p>Select a file or paste your text into the checker.</p>
+            </div>
+            <div class="step">
+                <img src="images/scan.png" alt="Scanning">
+                <h3>Scan for Plagiarism</h3>
+                <p>Our AI-powered system scans and compares your content.</p>
+            </div>
+            <div class="step">
+                <img src="images/result.png" alt="Get Results">
+                <h3>Get Instant Results</h3>
+                <p>Receive an easy-to-read plagiarism report with sources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Plagiarism Checker | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function redirectToLogin() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>

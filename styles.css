@@ -1,0 +1,194 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #1e1e1e;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+#auth {
+    width: 40%;
+    margin: 80px auto;
+    padding: 30px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
+    text-align: center;
+}
+
+.tabs button {
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #ff6600;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.tabs button:hover, .tabs button.active {
+    background: #ff6600;
+}
+
+input {
+    display: block;
+    width: 80%;
+    padding: 12px;
+    margin: 10px auto;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    background: #121212;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #ff6600;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(255, 102, 0, 0.5);
+}
+
+button {
+    background: linear-gradient(90deg, #ff6600, #ff4400);
+    color: white;
+    padding: 20px 35px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 102, 0, 0.5);
+}
+
+#loginForm, #registerForm {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+
+#loginForm.active, #registerForm.active {
+    opacity: 1;
+    transform: scale(1);
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #auth {
+        width: 90%;
+        padding: 20px;
+    }
+    input {
+        width: 95%;
+    }
+    .tabs button {
+        width: 45%;
+    }
+}
+#plagiarism-checker {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background: #121212;
+    color: white;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* About Section */
+#about {
+    margin-top: 80px;
+    padding: 40px;
+}
+
+#about h1, #about h2 {
+    color: #ff6600;
+}
+
+#about p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+}
+
+
+/* Steps Animation */
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.step {
+    background: #1e1e1e;
+    padding: 15px;
+    margin: 10px;
+    width: 60%;
+    border-radius: 8px;
+    font-size: 18px;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
